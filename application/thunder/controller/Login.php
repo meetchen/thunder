@@ -33,9 +33,6 @@ class Login extends Controller
      *  0 添加成功
      * 1 添加失败 未知错误
      * @return int
-     * @throws \think\exception\DbException
-     * @throws db\exception\DataNotFoundException
-     * @throws db\exception\ModelNotFoundException
      */
     public function register()
     {
