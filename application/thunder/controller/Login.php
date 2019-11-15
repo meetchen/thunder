@@ -12,7 +12,6 @@ class Login extends Controller
      * 登陆逻辑
      * 成功0
      * 失败1
-     * 123
      * @return int
      */
     public function login()
