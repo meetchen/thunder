@@ -39,4 +39,16 @@ class equipment
         else
             return -1;
     }
+
+    public function getCoordinate()
+    {
+        $equipment_id = input("equipmentId");
+        if ($equipment_id == null){
+            return -1;
+        }
+        $latitude = rand(386,5353)/100.0+rand(0,10000)*0.0001;
+        $longitude = rand(7366,13505)/100.0+rand(0,10000)*0.0001;
+        $coordinate = [$latitude,$longitude];
+        return json($coordinate);
+    }
 }
